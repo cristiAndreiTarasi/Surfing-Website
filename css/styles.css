@@ -4,7 +4,7 @@
 
 
 :root {
-    --textC: #dcdcdd;
+    --textC: #f1eeee;
 
     --fontWT: 300; 
     --fontWM: 400; 
@@ -34,33 +34,52 @@ header .edition_info {
     color: #605f5f;
 }
 
-nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul.navigation {
     margin: 0;
     padding: 0;
     height: 50px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    border-top: 1px solid #666;
 }
 
-nav ul li {
+nav ul.navigation li {
     list-style: none;
-    margin-right: 20px;
-    
-    
+    margin-right: 20px; 
 }
 
-nav ul a {
+nav ul.navigation a {
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     color: #605f5f;
 }
 
+nav ul.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul.social li {
+    margin-left: 20px;
+}
+
+nav ul.social li a {
+    color: #605f5f;
+}
+
+
 .hero {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 150px);
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -96,7 +115,7 @@ nav ul a {
 
     background: url('../img/surfer.jpg') center; 
     background-size: cover;
-    background-color: #464646;
+    background-color: #605f5f;
 
     /* box-shadow: inset -200px -200px 200px 200px rgba(70, 70, 70, .5); */
 }
