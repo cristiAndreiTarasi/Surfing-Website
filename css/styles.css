@@ -21,7 +21,7 @@ body, html { background-color: #f7f4f4; }
 /************ HEADER STYLES ************/
 header { 
     height: 100px; 
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,7 +85,9 @@ nav ul.social li a {
 }
 
 
-/************ MAIN CONTENT STYLES ************/
+/*------------------------------------*\
+  #MAIN CONTENT STYLES
+\*------------------------------------*/
 .hero {
     height: calc(100vh - 150px);
     display: grid;
